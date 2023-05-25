@@ -1,4 +1,5 @@
 import streamlit as st
+import pandas
 
 st.set_page_config(layout="wide")  # adjusts website to occupy whole width
 
@@ -35,3 +36,23 @@ contact_content = '<p style="font-family:Helvetica; font-size: 20px; font-weight
                   'Bellow you can find some of the apps i have built in Python, Feel free to contact me.</p>'
 
 st.markdown(contact_content, unsafe_allow_html=True)
+
+
+column3, emptycol, column4 = st.columns([1.5, 0.5, 1.5])  # in a list we pass ratio of columns width
+# that is to add space between column between col3 and col4, if we passed (3), the space would be too big
+
+df = pandas.read_csv("data.csv", sep=";")
+
+with column3:
+    for index, row in df[::2].iterrows():  # to make the projects appear top to bottom in order we created them
+        st.header(row["title"])
+        st.write(row["description"])
+        st.image("images/" + row["image"])
+        st.write(f"[Source Code]({row['url']})")
+
+with column4:
+    for index, row in df[1::2].iterrows():  # we use list slicing
+        st.header(row["title"])
+        st.write(row["description"])
+        st.image("images/" + row["image"])
+        st.write(f"[Source Code]({row['url']})")
