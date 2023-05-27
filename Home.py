@@ -6,7 +6,7 @@ st.set_page_config(layout="wide")  # adjusts website to occupy whole width
 column1, column2 = st.columns(2)  # setting two columns
 
 with column1:  # puts content into first (left) column
-    st.image("images/MYphoto.jpg")
+    st.image("images/Myphoto.jpg")
 
 m = st.markdown("""
 <style>
