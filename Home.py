@@ -29,6 +29,8 @@ with column2:
     also travelling appeals to me, the picture of
     me you see is from a trip me and my friends took to Mallorca - Spain, where we attempted to conquer the GR 221
     mountain trail in summer, almost succesfully, however that story would be more fitting for a blog page :).
+    If you liked any particular project and you would like for me to modify it for you, you can contact me from 
+    Contact Me page.
     """
     st.info(content)
 
