@@ -64,3 +64,25 @@ with col6:
     st.image("other_projects/TextToPDF1.png")
     st.image("other_projects/TextToPDF2.png")
     st.write(f"[pdf output](https://github.com/S1fam/TextToPDF/blob/master/output.pdf)")
+
+
+st.title("NASA API - Image of the day")
+content = """
+This app creates a simple webpage using streamlit. website displays content using NASA API. 
+it requests astronomic picture of the day to get the image of the day, its title and description. 
+it saves the image using its url and displays it on webpage. 
+To use this app all you have to do is create your API key on NASA webpage for free. 
+To run this app import you API key to code in line 5 and in terminal run: streamlit run Home.py
+Bellow you can find image of two versions of web GUI, first with only one column and second with two columns.
+You can also find link to source code here
+"""
+st.info(content)
+
+col7, col8 = st.columns(2)
+
+with col7:
+    st.image("other_projects/NasaAPIWeb.png")
+    st.write(f"[Source Code](https://github.com/S1fam/NasaAPI-image-of-day)")
+
+with col8:
+    st.image("other_projects/NasaAPIWebWide.png")

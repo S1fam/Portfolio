@@ -84,3 +84,23 @@ with col7:
 with col8:
     st.image("project_examples/PdfInvoice.png")
     st.write(f"[pdf output](https://github.com/S1fam/ExcelToPDF/blob/master/PDFs/10003-2023.1.18.pdf)")
+
+
+st.title("News by email")
+content = """
+This app accesses news about particular topic using newsapi.org and send them to user on email. 
+it extracts title, description and url to the article and sends 20 of most recent results to the user.
+To use this app you will have copy source code, create a key on newsapi.org and insert it into file main.py at line 5
+you also need to set up your email adress in file send_email.py . Bellow you can find example of newsapi.org and
+the email recieved on my email adress aswell as link to source code of the project.
+"""
+st.info(content)
+
+col9, col10 = st.columns(2)
+
+with col9:
+    st.image("project_examples/NewsByEmail.png")
+    st.write(f"[Source Code](https://github.com/S1fam/NewsByEmail)")
+
+with col10:
+    st.image("project_examples/NewsByEmail2.png")
