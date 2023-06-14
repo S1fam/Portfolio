@@ -86,3 +86,47 @@ with col7:
 
 with col8:
     st.image("other_projects/NasaAPIWebWide.png")
+
+
+st.title("Dictionary API")
+content = """
+This project is a dictionary API, the goal of this
+project was to create our own API. When executed user gets shown a homepage with url format and example.
+User can enter the url into search bar and enter a word for which they want to see definition into url, for example
+http://127.0.0.1:5000/api/v1/sun would show user a definition of a word sun. 
+to use this app you have to copy the source code and run main.py file. In this projects we rendered html templates
+using Flask library. Bellow you can see example of html home page aswell as page shown when example url is entered.
+You can find source code link bellow the image.
+"""
+st.info(content)
+
+col9, col10 = st.columns(2)
+
+with col9:
+    st.image("other_projects/DictAPI1.png")
+    st.write(f"[Source Code](https://github.com/S1fam/DictionaryAPI)")
+
+with col10:
+    st.image("other_projects/DictAPI2.png")
+
+
+st.title("Happiness Index Analysis")
+content = """
+This app allows user to check different data for each country in the world, the data come from happines index.
+User can check for example GDP or life expectancy of countries.
+The user interface is a web application made with streamlit library and the user gets to see the data on a scatter 
+graph made with plotly library. you can see examples of scattering the data bellow, aswell as link to source code.
+To run the app you will need to copy the repository and run app using: streamlit run Home.py
+"""
+st.info(content)
+
+col11, col12 = st.columns(2)
+
+with col11:
+    st.image("other_projects/HappinessIndex.png")
+    st.write(f"[Source Code](https://github.com/S1fam/HappinessIndex)")
+
+with col12:
+    st.image("other_projects/HappinessIndex2.png")
+
+

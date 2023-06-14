@@ -104,3 +104,48 @@ with col9:
 
 with col10:
     st.image("project_examples/NewsByEmail2.png")
+
+
+st.title("Weather API")
+content = """
+A goal of this app was to create our own API that shows historical weather data for locations across Europe
+App takes a dataset of weather stations, and allows user to display temperature and other station data for given number
+of station and chosen date. the user gets to choose what date and station to display by editing a url and pasting it in
+browser. The example urls are displayed on a homepage of the project aswell as what stations and numbers he can choose.
+Options are: display temperature of station on given day, display all data for one station and display all data for one
+station in given year. to run this project you need to download the source code and run main.py file or run
+using: flask --app main run , since the application uses flask to render html pages.
+You can see numbers of stations you can enter a date for in the first image bellow it
+link to the source code. Results of the example urls searches:.
+"""
+st.info(content)
+
+col11, col12 = st.columns(2)
+
+with col11:
+    st.image("project_examples/WeatherAPI1.png")
+    st.image("project_examples/WeatherAPI2.png")
+    st.write(f"[Source Code](https://github.com/S1fam/WeatherAPI)")
+
+with col12:
+    st.image("project_examples/WeatherAPI3.png")
+    st.image("project_examples/WeatherAPI4.png")
+
+
+st.title("Weather Forecast")
+content = """
+This appliction allows user to see weather forecast for up to 5 days for their chosen location. User can choose location, amount
+of days to be forecasted and whether they want to see temperature or sky. This app uses streamlit library for user interface.
+For weather forecast we use openweathermap.org free API, here to run the app you need to create your account and insert you api key
+in the backend.py file on line 3 and run the app by entering: streamlit run main.py in the terminal.
+"""
+st.info(content)
+
+col13, col14 = st.columns(2)
+
+with col13:
+    st.image("project_examples/WeatherForecast.png")
+    st.write(f"[Source Code](https://github.com/S1fam/WeatherForecast)")
+
+with col14:
+    st.image("project_examples/WeatherForecast2.png")
