@@ -149,3 +149,36 @@ with col13:
 
 with col14:
     st.image("project_examples/WeatherForecast2.png")
+
+
+st.title("Sentiment analysis")
+content = """
+This project
+This project contains analysis of multiple text files using jupyter notebook aswell as one 
+.py file containing a streamlit website to plot charts into the website.
+\n
+To run:
+To run you need to have a python interpreter, downloaded packages in your enviroment and run the website using 
+"streamlit run main.py" or access the notebooks have jupyter downloaded and with 
+"jupyter notebook" command in the terminal run the notebooks.
+\n
+The notebooks:
+The notebooks are analyzing a book "Miracle in the Andes", most commonly used words, 
+number of occurances of given word, names of chapters, 
+extraction of sentences or paragraphs where certain word is used etc... 
+All of that is accomplished mostly using regular expressions. 
+Then using nltk library analyzing the mood of each chapter
+"""
+st.info(content)
+
+col15, col16 = st.columns(2)
+
+with col15:
+    st.image("project_examples/analysis.png")
+    st.write(f"[Source Code](https://github.com/S1fam/Sentiment-analysis)")
+
+with col16:
+    st.image("project_examples/analysisplot1.png")
+    st.image("project_examples/analysisplot2.png")
+
+
